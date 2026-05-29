@@ -7,6 +7,7 @@ license = "MIT"
 repository = "https://github.com/juddisjudd/pobpaser"
 homepage = "https://juddisjudd.github.io/pobpaser/"
 documentation = "https://docs.rs/pob-parser"
+readme = "README.md"
 
 [dependencies]
 base64 = "0.22"
