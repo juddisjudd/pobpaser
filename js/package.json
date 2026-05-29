@@ -1,0 +1,43 @@
+{
+  "name": "pob-parser",
+  "version": "1.0.0",
+  "description": "Path of Building (PoB) import code and pobb.in URL parser",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juddisjudd/pobpaser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juddisjudd/pobpaser/issues"
+  },
+  "homepage": "https://juddisjudd.github.io/pobpaser/",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm,iife --global-name PoBParser --dts --clean",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "start": "node dev-server.js",
+    "build:demo": "node build-demo.js"
+  },
+  "keywords": [
+    "path-of-exile",
+    "path-of-building",
+    "pob",
+    "pobb.in"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "tsup": "^8.0.2",
+    "tsx": "^4.7.2",
+    "@types/node": "^20.12.12"
+  }
+}

@@ -1,0 +1,23 @@
+[package]
+name = "pob-parser"
+version = "1.0.0"
+edition = "2021"
+description = "Path of Building (PoB) import code and pobb.in URL parser"
+license = "MIT"
+repository = "https://github.com/juddisjudd/pobpaser"
+homepage = "https://juddisjudd.github.io/pobpaser/"
+documentation = "https://docs.rs/pob-parser"
+
+[dependencies]
+base64 = "0.22"
+flate2 = "1.0"
+thiserror = "1.0"
+
+# Gated optional dependencies
+reqwest = { version = "0.12", features = ["json", "blocking"], optional = true }
+tokio = { version = "1.0", features = ["rt"], optional = true }
+
+[features]
+default = []
+fetch = ["dep:reqwest", "dep:tokio"]
+blocking = ["dep:reqwest"]
