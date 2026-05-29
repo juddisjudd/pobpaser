@@ -1,5 +1,11 @@
 # pob-parser
 
+[![npm version](https://img.shields.io/npm/v/pob-parser.svg?style=flat-square)](https://www.npmjs.com/package/pob-parser)
+[![npm downloads](https://img.shields.io/npm/dm/pob-parser.svg?style=flat-square)](https://www.npmjs.com/package/pob-parser)
+[![crates.io version](https://img.shields.io/crates/v/pob-parser.svg?style=flat-square)](https://crates.io/crates/pob-parser)
+[![crates.io downloads](https://img.shields.io/crates/d/pob-parser.svg?style=flat-square)](https://crates.io/crates/pob-parser)
+[![docs.rs](https://img.shields.io/docsrs/pob-parser?style=flat-square)](https://docs.rs/pob-parser)
+
 A high-performance, robust, and zero-dependency library for parsing, encoding, decoding, and fetching Path of Building (PoB) import codes and pobb.in links. Available in both TypeScript/JavaScript (npm) and Rust (crates.io).
 
 ## Features
